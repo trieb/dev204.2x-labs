@@ -4,7 +4,7 @@ namespace Mod1
 {
     class UProgram
     {
-        String Name = "";
+        public string Name { get; set; }
 
         public UProgram(string name)
         {

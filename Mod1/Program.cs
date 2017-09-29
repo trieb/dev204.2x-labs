@@ -6,7 +6,7 @@ namespace Mod1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Mod1 - Lab");
             UProgram uprogram = new UProgram("Information Technology");
         }
     }
