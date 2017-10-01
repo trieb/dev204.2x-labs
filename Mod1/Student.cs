@@ -4,12 +4,16 @@ namespace Mod1
 {
     class Student
     {
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public static int numberOfStudents = 0; 
 
-        public Student(string name)
+        public Student(string fname, string lname)
         {
-            this.Name = name;
-            Console.WriteLine("Creating Student " + this.Name);
+            this.FirstName = fname;
+            this.LastName = lname;
+            Console.WriteLine("Creating Student " + this.FirstName + " " + this.LastName);
+            numberOfStudents += 1; 
         }
     }
 }
