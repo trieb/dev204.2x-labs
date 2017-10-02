@@ -22,9 +22,9 @@ namespace Mod1
             for ( int i=0; i < Teacher.numberOfTeachers; i++){
                 Console.WriteLine("    " + i + ": " + teachers[i].FirstName + " " + teachers[i].LastName);
             }
-            Console.WriteLine("  Students (" + Student.numberOfStudents + " st)");
-            for ( int i=0; i < Student.numberOfStudents; i++){
-                Console.WriteLine("    " + i + ": " + students[i].FirstName + " " + students[i].LastName);
+            Console.WriteLine("  Students (" + Student.GetNumberOfStudents + " st)");
+            for ( int i=0; i < Student.GetNumberOfStudents; i++){
+                Console.WriteLine("    " + i + ": " + students[i].FirstName + " " + students[i].LastName + " year: " + students[i].year);
             }
         }
     }

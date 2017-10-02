@@ -9,10 +9,10 @@ namespace Mod1
             Console.WriteLine("Mod1 - Lab");
 
             // 1) Add 3 students 
-            Student student1 = new Student("Mikael", "Trieb");
-            Student student2 = new Student("Adam", "Smith");
-            Student student3 = new Student("Napoleon", "Hill");
-
+            Student student1 = new Student("Mikael", "Trieb", 7);
+            Student student2 = new Student("Adam", "Smith", 8);
+            Student student3 = new Student("Napoleon", "Hill", 9);
+            
             // 2) Instantiate a course called Programming with C#
             Course course = new Course("Programming with C#");
 

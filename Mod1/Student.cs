@@ -2,18 +2,28 @@ using System;
 
 namespace Mod1
 {
-    class Student
+    class Student : Person
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public static int numberOfStudents = 0; 
-
-        public Student(string fname, string lname)
+        public int year = 0; 
+        private static int numberOfStudents = 0; 
+        
+        public static int GetNumberOfStudents 
         {
-            this.FirstName = fname;
-            this.LastName = lname;
-            Console.WriteLine("Creating Student " + this.FirstName + " " + this.LastName);
+            get 
+            {
+                return numberOfStudents;
+            }
+        }
+
+        public Student(string fname, string lname, int year) : base(fname, lname)
+        {
+            this.year = year; 
             numberOfStudents += 1; 
+        }
+
+        public void TakeTest()
+        {
+            Console.WriteLine("Student is taking test");
         }
     }
 }

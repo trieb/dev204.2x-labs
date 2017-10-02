@@ -2,18 +2,18 @@ using System;
 
 namespace Mod1
 {
-    class Teacher
+    class Teacher : Person
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
         public static int numberOfTeachers = 0; 
 
-        public Teacher(string firstName, string lastName)
+        public Teacher(string firstName, string lastName) : base(firstName, lastName)
         {
-            this.FirstName = firstName;
-            this.LastName = lastName;
-            Console.WriteLine("Creating Teacher " + this.FirstName + " " + this.LastName);
             numberOfTeachers += 1;
+        }
+
+        public void GradeTest()
+        {
+            Console.WriteLine("Teacher is grading test");
         }
     }
 }
