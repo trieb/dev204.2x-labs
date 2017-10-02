@@ -2,7 +2,7 @@
 DEV204.2x Object Oriented Programming in C#
 
 1) Install Microsoft Visual Studio Code 
-2) Install .Net Core
+2) Install .Net Core SDK
 3) Open Code and install C#-extension
 4) Ctrl + ~
 5) In terminal write "dotnet new console"
