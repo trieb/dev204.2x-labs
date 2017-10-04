@@ -41,6 +41,16 @@ namespace Mod1
 
             // 10) Print information about the UProgram
             uprogram.PrintInfo();
+
+
+            // Module 3 
+            student1.WriteDetails("details1.txt");
+            student2.WriteDetails("details2.txt");
+            student3.WriteDetails("details3.txt");
+
+            student1.Dispose();
+            student2.Dispose();
+            student3.Dispose();
         }
 
     }
